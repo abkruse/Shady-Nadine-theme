@@ -82,7 +82,7 @@ nav ul a:hover {
 }
 
 .logo-img	 {
-	content: url(../img/logo-line.png);
+	content: url(img/logo-line.png);
 	height: 140px;
 	margin-left: 5%;
 	z-index: 2000;
@@ -94,7 +94,7 @@ nav ul a:hover {
 }
 
 .sec-logo {
-	content: url(../img/logo-line.png);
+	content: url(img/logo-line.png);
 	position: fixed;
 	top: 0;
 	left: 0;
