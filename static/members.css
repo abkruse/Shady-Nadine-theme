@@ -44,6 +44,10 @@ p {
 	z-index: 100;
 }
 
+#home-nav {
+	box-shadow: none;
+}
+
 #home-nav a {
 		color: black;
 }
@@ -134,8 +138,8 @@ nav ul a:hover {
 }
 
 #profile_form {
-	background-color: RGBA(232, 232, 232, 1);
-	padding: 2%;
+	background-color: RGBA(239, 238, 231, 1);
+	padding: 3%;
 	margin-left: 15%;
 	width: 70%;
 }
