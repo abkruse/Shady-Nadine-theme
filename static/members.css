@@ -133,6 +133,28 @@ nav ul a:hover {
 	margin: 10px auto;
 }
 
+#profile_form {
+	background-color: RGBA(232, 232, 232, 1);
+	padding: 2%;
+	margin-left: 15%;
+	width: 70%;
+}
+
+#profile_form tr {
+	border: none;
+}
+
+#profile_form input {
+	padding: 2%;
+	background-color: white;
+	border-bottom: none;
+}
+
+#sub-btn {
+	margin-top: 2%;
+	margin-left: 35%;
+}
+
 
 .tabs {
 	color: RGBA(44, 148, 231, 1);
@@ -250,9 +272,22 @@ footer.home-footer {
 	letter-spacing: .5px;
 }
 
- /*Undock header on narrow screens and hide title */
+
 @media only screen and (max-width: 990px) {
 	 iframe {
 		 width: 200px;
 	 }
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+	#profile_form {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#profile_form input {
+		margin-right: 1%;
+	}
 }
