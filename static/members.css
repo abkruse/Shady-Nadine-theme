@@ -123,6 +123,10 @@ nav ul a:hover {
 
 /* Body */
 
+iframe {
+	margin-left: 10%;
+}
+
 #content h2 {
 	display: block;
 	text-align: center;
@@ -286,9 +290,7 @@ footer.home-footer {
 
 
 @media only screen and (max-width: 990px) {
-	 iframe {
-		 width: 200px;
-	 }
+
 }
 
 
