@@ -14,8 +14,6 @@
 {% endblock %}
 
 {% block body %}
-	<!-- <div id="page_container"> -->
-		<!-- Page -->
 		<div id="header_container">
 			<div id="header">
 				<nav class='row' id='main-nav'>
@@ -55,14 +53,15 @@
 			</div>
 		</div>
 
-		<div>
-			<div class='row'>
-				<div class="lightbg col s10 offset-s1">
-					<div id="content">{% block content %}{% endblock %}</div>
+		{% block main_body %}
+			<div>
+				<div class='row'>
+					<div class="lightbg col s10 offset-s1">
+						<div id="content">{% block content %}{% endblock %}</div>
+					</div>
 				</div>
 			</div>
-		</div>
-
+		{% endblock %}
 
 		<!-- Footer -->
 		<footer class="main-footer">
