@@ -2,44 +2,22 @@
 {% load settings_value %}
 {% load static %}
 
-{% block top_nav %}
-	<nav class='row' id='main-nav'>
-		<div class='nav-wrapper'>
-			<div id='logo'>
-				<a href="{% url 'member_home' %}" id="home">
-					<img class='sec-logo' />
-				</a>
-			</div>
-      <ul id="nav-mobile" class="right">
-{% endblock %}
-
-{% block footer %}
-		<!-- Footer -->
-		<footer class="main-footer">
-			<div class="footer-copyright">
-				<div class="container">
-					<span id='copyright'>© 2016 |  Office Nomads | <a id='nadine-link' href="http://nadineproject.org/" target="_new">The Nadine Project</a></span>
-				</div>
-			</div>
-		</footer>
-		<!-- End Page -->
-	</div>
-{% endblock %}
+{% block lowerfooter %}{% endblock %}
 
 {% block extrajs %}
-<script>
-	$(document).on('scroll', function() {
-		var scrollY = $(window).scrollTop();
-		var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-			shrinkOn = 150;
-		if (scrollY > shrinkOn) {
-			$('#home').addClass('smaller');
-		} else {
-			if($('#home').hasClass('smaller')) {
-				$('#home').removeClass('smaller');
+	<script>
+		$(document).on('scroll', function() {
+			var scrollY = $(window).scrollTop();
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+				shrinkOn = 150;
+			if (scrollY > shrinkOn) {
+				$('#home').addClass('smaller');
+			} else {
+				if($('#home').hasClass('smaller')) {
+					$('#home').removeClass('smaller');
+				}
 			}
-		}
+		});
 	});
-});
-</script>
+	</script>
 {% endblock %}

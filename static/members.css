@@ -135,6 +135,10 @@ iframe {
 	margin-left: 10%;
 }
 
+#content {
+	margin-top: 5%;
+}
+
 #content h2 {
 	display: block;
 	text-align: center;
@@ -314,6 +318,7 @@ table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }
 /* Footer */
 
 footer.main-footer {
+	background-color: white;
 	padding: 1px;
   right: 0;
   bottom: 0;
@@ -330,7 +335,16 @@ footer.home-footer {
 	position: absolute;
 }
 
+span#copyright {
+	background-color: RGBA(239, 238, 231, 1);
+}
+
+div.footer-copyright.setwidth.container {
+	background-color: white;
+}
+
 #copyright {
+	background-color: white;
 	float: left;
 	margin-left: 30%;
 	color: black;
@@ -352,5 +366,9 @@ footer.home-footer {
 
 	#profile_form input {
 		margin-right: 1%;
+	}
+
+	#content {
+		margin-top: 10%;
 	}
 }

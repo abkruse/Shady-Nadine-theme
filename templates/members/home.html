@@ -18,22 +18,19 @@
 			{% autoescape off %}
 				{{ page_body }}
 			{% endautoescape %}
-
-
 				{% endblock %}
 			</div>
 {% endblock %}
 
 {% block footer %}
-	<!-- Footer -->
 	<footer class="home-footer">
 		<div class="footer-copyright">
       <div class="container">
       	<span id='copyright'>© 2016 |  Office Nomads | <a id='nadine-link' href="http://nadineproject.org/" target="_new">The Nadine Project</a></span>
+				{% block lowerfooter %}{% endblock %}
 			</div>
     </div>
   </footer>
-	<!-- End Page -->
 </div>
 {% endblock %}
 
