@@ -335,6 +335,17 @@ footer.home-footer {
 	position: absolute;
 }
 
+footer.sticky-footer {
+	background: white;
+	clear: both;
+	width: 100%;
+	padding: 10px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
 span#copyright {
 	background-color: RGBA(239, 238, 231, 1);
 }
